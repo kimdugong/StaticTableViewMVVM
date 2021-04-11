@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,16 @@
 		42FD18012622BEB5006464F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42FD17FF2622BEB5006464F9 /* Main.storyboard */; };
 		42FD18032622BEB5006464F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42FD18022622BEB5006464F9 /* Assets.xcassets */; };
 		42FD18062622BEB5006464F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42FD18042622BEB5006464F9 /* LaunchScreen.storyboard */; };
+		42FD180F2622BF41006464F9 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FD180E2622BF41006464F9 /* ViewModel.swift */; };
+		42FD18182622C4B4006464F9 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 42FD18172622C4B4006464F9 /* SnapKit */; };
+		42FD181F2622C7CD006464F9 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FD181E2622C7CD006464F9 /* Cell.swift */; };
+		42FD18222622C899006464F9 /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FD18212622C899006464F9 /* CellViewModel.swift */; };
+		42FD18322622E880006464F9 /* RxDataSources in Frameworks */ = {isa = PBXBuildFile; productRef = 42FD18312622E880006464F9 /* RxDataSources */; };
+		42FD18342622E880006464F9 /* Differentiator in Frameworks */ = {isa = PBXBuildFile; productRef = 42FD18332622E880006464F9 /* Differentiator */; };
+		42FD18382622E9B8006464F9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42FD18372622E9B8006464F9 /* Model.swift */; };
+		42FD183E262302BA006464F9 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 42FD183D262302BA006464F9 /* RxSwift */; };
+		42FD1840262302BA006464F9 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 42FD183F262302BA006464F9 /* RxCocoa */; };
+		42FD1842262302BA006464F9 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 42FD1841262302BA006464F9 /* RxRelay */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,10 @@
 		42FD18022622BEB5006464F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42FD18052622BEB5006464F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42FD18072622BEB5006464F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42FD180E2622BF41006464F9 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		42FD181E2622C7CD006464F9 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		42FD18212622C899006464F9 /* CellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
+		42FD18372622E9B8006464F9 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42FD1842262302BA006464F9 /* RxRelay in Frameworks */,
+				42FD18342622E880006464F9 /* Differentiator in Frameworks */,
+				42FD18322622E880006464F9 /* RxDataSources in Frameworks */,
+				42FD1840262302BA006464F9 /* RxCocoa in Frameworks */,
+				42FD183E262302BA006464F9 /* RxSwift in Frameworks */,
+				42FD18182622C4B4006464F9 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +76,27 @@
 		42FD17F82622BEB5006464F9 /* StaticTableViewMVVM */ = {
 			isa = PBXGroup;
 			children = (
-				42FD17F92622BEB5006464F9 /* AppDelegate.swift */,
-				42FD17FB2622BEB5006464F9 /* SceneDelegate.swift */,
+				42FD18112622BF56006464F9 /* Supporting Files */,
 				42FD17FD2622BEB5006464F9 /* ViewController.swift */,
-				42FD17FF2622BEB5006464F9 /* Main.storyboard */,
-				42FD18022622BEB5006464F9 /* Assets.xcassets */,
-				42FD18042622BEB5006464F9 /* LaunchScreen.storyboard */,
-				42FD18072622BEB5006464F9 /* Info.plist */,
+				42FD180E2622BF41006464F9 /* ViewModel.swift */,
+				42FD181E2622C7CD006464F9 /* Cell.swift */,
+				42FD18212622C899006464F9 /* CellViewModel.swift */,
+				42FD18372622E9B8006464F9 /* Model.swift */,
 			);
 			path = StaticTableViewMVVM;
+			sourceTree = "<group>";
+		};
+		42FD18112622BF56006464F9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42FD18042622BEB5006464F9 /* LaunchScreen.storyboard */,
+				42FD18072622BEB5006464F9 /* Info.plist */,
+				42FD18022622BEB5006464F9 /* Assets.xcassets */,
+				42FD17FF2622BEB5006464F9 /* Main.storyboard */,
+				42FD17FB2622BEB5006464F9 /* SceneDelegate.swift */,
+				42FD17F92622BEB5006464F9 /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +115,14 @@
 			dependencies = (
 			);
 			name = StaticTableViewMVVM;
+			packageProductDependencies = (
+				42FD18172622C4B4006464F9 /* SnapKit */,
+				42FD18312622E880006464F9 /* RxDataSources */,
+				42FD18332622E880006464F9 /* Differentiator */,
+				42FD183D262302BA006464F9 /* RxSwift */,
+				42FD183F262302BA006464F9 /* RxCocoa */,
+				42FD1841262302BA006464F9 /* RxRelay */,
+			);
 			productName = StaticTableViewMVVM;
 			productReference = 42FD17F62622BEB5006464F9 /* StaticTableViewMVVM.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +150,11 @@
 				Base,
 			);
 			mainGroup = 42FD17ED2622BEB5006464F9;
+			packageReferences = (
+				42FD18162622C4B4006464F9 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				42FD18302622E880006464F9 /* XCRemoteSwiftPackageReference "RxDataSources" */,
+				42FD183C262302BA006464F9 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 42FD17F72622BEB5006464F9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,7 +184,11 @@
 			files = (
 				42FD17FE2622BEB5006464F9 /* ViewController.swift in Sources */,
 				42FD17FA2622BEB5006464F9 /* AppDelegate.swift in Sources */,
+				42FD18222622C899006464F9 /* CellViewModel.swift in Sources */,
+				42FD180F2622BF41006464F9 /* ViewModel.swift in Sources */,
 				42FD17FC2622BEB5006464F9 /* SceneDelegate.swift in Sources */,
+				42FD181F2622C7CD006464F9 /* Cell.swift in Sources */,
+				42FD18382622E9B8006464F9 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +337,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XNB68CC222;
-				INFOPLIST_FILE = StaticTableViewMVVM/Info.plist;
+				ENABLE_TESTING_SEARCH_PATHS = NO;
+				INFOPLIST_FILE = "StaticTableViewMVVM/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +357,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XNB68CC222;
-				INFOPLIST_FILE = StaticTableViewMVVM/Info.plist;
+				ENABLE_TESTING_SEARCH_PATHS = NO;
+				INFOPLIST_FILE = "StaticTableViewMVVM/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,6 +392,66 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		42FD18162622C4B4006464F9 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		42FD18302622E880006464F9 /* XCRemoteSwiftPackageReference "RxDataSources" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxDataSources.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		42FD183C262302BA006464F9 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		42FD18172622C4B4006464F9 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42FD18162622C4B4006464F9 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		42FD18312622E880006464F9 /* RxDataSources */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42FD18302622E880006464F9 /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = RxDataSources;
+		};
+		42FD18332622E880006464F9 /* Differentiator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42FD18302622E880006464F9 /* XCRemoteSwiftPackageReference "RxDataSources" */;
+			productName = Differentiator;
+		};
+		42FD183D262302BA006464F9 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42FD183C262302BA006464F9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		42FD183F262302BA006464F9 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42FD183C262302BA006464F9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		42FD1841262302BA006464F9 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42FD183C262302BA006464F9 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 42FD17EE2622BEB5006464F9 /* Project object */;
 }
